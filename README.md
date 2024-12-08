@@ -37,7 +37,7 @@ Este proyecto es una página web responsive diseñada para una empresa ficticia 
 
 1. Clona el repositorio
 ```bash
-git clone https://github.com/tu-usuario/premium-roofing.git
+git clone https://github.com/Roosendo/elite-roofing-solutions.git
 ```
 
 2. Instala las dependencias
