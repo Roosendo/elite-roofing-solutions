@@ -1,8 +1,8 @@
-# Premium Roofing Solutions 🏡🛠️
+# Elite Roofing Solutions 🏡🛠️
 
 ## Descripción del Proyecto
 
-Este proyecto es una página web responsive diseñada para una empresa ficticia de techado premium, enfocada en transmitir lujo, profesionalismo y alta calidad de servicio.
+Este proyecto es una página web responsive diseñada para una empresa ficticia de techado, enfocada en transmitir lujo, profesionalismo y alta calidad de servicio siguiendo las indicaciones del archivo que se me compartió para evaluación.
 
 > [!IMPORTANT]
 > Para ejecutar este proyecto, necesitarás tener configurados previamente `tsconfig.json` para TypeScript y `tailwind.config.js` para TailwindCSS.
@@ -51,13 +51,8 @@ npm run dev
 
 - Ejecutar Biome (linting y formatting):
 ```bash
-npm run lint      # Verificar problemas
-npm run format    # Formatear código
-```
-
-- Generar reporte de Lighthouse:
-```bash
-npm run lighthouse
+npm run biome-format    # Formatear código
+npm run biome-lint      # Verificar problemas
 ```
 
 ## Estructura del Proyecto
@@ -66,7 +61,7 @@ npm run lighthouse
 /src
 ├── assets/           # Recursos gráficos
 ├── components/       # Componentes reutilizables
-├── styles/           # Hojas de estilo
+|-- lib/              # Funciones y utilidades
 └── scripts/          # Archivos JavaScript/TypeScript
 ```
 
@@ -97,12 +92,12 @@ npm run lighthouse
 > [!NOTE]
 > Roadmap de mejoras planificadas:
 
-- 🔧 Migración a framework moderno (React, Vue o Angular)
+- 🔧 Migración a framework moderno (React, Astro o Angular)
 - 🌐 Mejora avanzada de SEO con Lighthouse
 - 🔍 Optimización continua basada en reportes de Lighthouse
 - 🔒 Implementación de mejores prácticas de accesibilidad
 - 📊 Integración de analytics
-- 🤖 Implementación de chatbot de soporte
+- 🌍 Internacionalización
 
 ## Rendimiento
 
@@ -111,37 +106,8 @@ npm run lighthouse
 - Puntuaciones altas en auditorías de Lighthouse
 - Código limpio y consistente con Biome.js
 
-## Configuración de Biome
-
-Archivo base de configuración `biome.json`:
-```json
-{
-  "$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  },
-  "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2
-  }
-}
-```
-
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, lee las guías de contribución antes de enviar un pull request.
-
-## Licencia
-
-[Especificar tipo de licencia]
+Las contribuciones son bienvenidas, aunque de momento sólo es un ejercicio de evaluación.
 
 ---
-
-**Desarrollado con ❤️ por [Tu Nombre]**
