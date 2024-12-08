@@ -30,6 +30,9 @@ Este proyecto es una página web responsive diseñada para una empresa ficticia 
 - ✅ Formulario de contacto con validación
 - 🎨 Esquema de colores premium
 
+> [!NOTE]
+> El interruptor del modo claro/oscuro se encuentra en el footer.
+
 ## Instalación y Configuración
 
 1. Clona el repositorio
@@ -46,6 +49,9 @@ npm install
 ```bash
 npm run dev
 ```
+4. Abre el navegador y visita `http://localhost:5173`
+
+5. O también puedes visitar la página en producción [aquí](https://elite-roofing-solutions.vercel.app/)
 
 ## Scripts de Desarrollo
 
@@ -59,10 +65,9 @@ npm run biome-lint      # Verificar problemas
 
 ```
 /src
-├── assets/           # Recursos gráficos
 ├── components/       # Componentes reutilizables
+|   |-- icons/        # Iconos SVG
 |-- lib/              # Funciones y utilidades
-└── scripts/          # Archivos JavaScript/TypeScript
 ```
 
 ## Herramientas de Desarrollo
@@ -86,6 +91,31 @@ npm run biome-lint      # Verificar problemas
 - Formulario de contacto con validación en tiempo real
 - Transiciones y animaciones suaves
 - Integración de mapa
+
+## Enfoque de Diseño
+
+ - Me base en diferentes galerías de componentes y sitios web para obtener inspiración y crear un diseño que refleje lujo y profesionalismo.
+ - Seguido de mantener una apariencia uniforme y consistente en todo el sitio web, y no disponer de 4 botones diferente que hacen lo mismo en diferentes secciones.
+ - Mantener bordes, sombras y que no de la sensación de estar sobrecargado de información.
+
+## Tecnologías Utilizadas
+
+ - Dado que en el archivo de evaluación sólamente dice HTML, CSS Y Javascript, no quise usar un framework para seguir bien las indicaciones, pero si hubiera sido un proyecto real, hubiera usado React o Astro para mejorar la experiencia del usuario y la facilidad de mantenimiento.
+
+ - Aún así, utilicé Typescript por si necesitaba algún tipado y evitar pequeños errores que puedan surgir en el desarrollo.
+
+  - TailwindCSS para el diseño y estilos, ya que es muy fácil de usar y permite crear diseños responsivos de manera rápida.
+
+  - Vite para el desarrollo, siendo muy rápido y permitiendo tener un entorno de desarrollo moderno y eficiente, fué mi decisión para este proyecto.
+
+## Explicación de Código
+
+ - **Componentes**: Cada componente tiene su propio archivo y carpeta, para mantener el código limpio y organizado.
+    - Por ejemplo, el componente `Hero` tiene su propio archivo `Hero.ts` y carpeta `components/`.
+    - Y cada carpeta dentro tiene un archivo `index.ts` para exportar todos los componentes y mejorar su importación.
+ - **Componetización**: Cada sección de la página es un componente, para poder reutilizarlo en otras páginas o secciones.
+    - Usando un enfoque parecido a React, cada componente es una función que retorna un elemento HTML, y puede recibir parámetros, que serían las props.
+  - **Formulario**: Aunque no es funcional, podría serlo fácilmente con un backend, y tiene validación en tiempo real para los campos requeridos, sólo queda hacerlo y poder unirlos.
 
 ## Mejoras Futuras
 

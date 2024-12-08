@@ -1,6 +1,8 @@
+import { ThemeToggle } from './ThemeToggle'
+
 export const Footer = () => {
   return `
-    <footer class='mt-3 w-full rounded-lg bg-gray-800 shadow'>
+    <footer class='w-full rounded-t-lg bg-gray-100 dark:bg-gray-800 shadow'>
       <div class='mx-auto w-full max-w-screen-xl p-3 md:py-8'>
         <div class='sm:flex sm:items-center sm:justify-between'>
           <a
@@ -8,8 +10,8 @@ export const Footer = () => {
             class='mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse'
           >
             <span
-              class='self-center whitespace-nowrap text-2xl font-semibold text-black dark:text-gold-500'
-            >Elite Roofing (Rosendo Garcia)</span
+              class='self-center whitespace-nowrap text-2xl font-semibold text-gold-metalic-500 dark:text-gold-500'
+            >Elite Roofing</span
             >
           </a>
           <ul
@@ -37,6 +39,9 @@ export const Footer = () => {
           </ul>
         </div>
         <hr class='my-3 border-gray-800 dark:border-gray-700 sm:mx-auto lg:my-8' />
+        <div class='block text-sm text-gray-500 dark:text-gray-400 sm:text-center'>
+          ${ThemeToggle()}
+        </div>
         <span class='block text-center text-sm text-gray-600 dark:text-gray-400'
         >Componentes de
           <a href='https://flowbite.com/' target='_blank' class='hover:underline'>Flowbite</a>.</span
@@ -51,7 +56,7 @@ export const Footer = () => {
           <a href='https://fontsource.org/' target='_blank' class='hover:underline'>Fontsource</a>.</span
         >
         <span class='block text-center text-sm text-gray-600 dark:text-gray-400'
-        >Hecho por mí. Puedes revisar mis redes que estan en este footer.
+        >Hecho por Rosendo Garcia. Puedes revisar mis redes que estan en este footer.
       </div>
     </footer> 
   `

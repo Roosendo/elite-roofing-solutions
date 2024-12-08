@@ -3,48 +3,48 @@ import { Email, MapPin, Phone } from "./icons"
 
 export const Contact = () => {
   return `
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <form class="space-y-6">
             <div>
-              <label for="name" class="block mb-2 text-sm font-medium text-gray-800">Nombre</label>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">Nombre</label>
               <input 
                 type="text" 
                 id="name" 
                 name="name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
+                class="bg-gray-50 dark:bg-gray-700 border border-gray-300 text-gray-800 dark:text-gray-200 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
                 required 
               />
             </div>
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Correo Electrónico</label>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">Correo Electrónico</label>
               <input 
                 type="email" 
                 id="email" 
                 name="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
+                class="bg-gray-50 dark:bg-gray-700 border border-gray-300 text-gray-800 dark:text-gray-200 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
                 required 
               />
             </div>
             <div>
-              <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Teléfono</label>
+              <label for="phone" class="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">Teléfono</label>
               <input 
                 type="tel" 
                 id="phone" 
                 name="phone"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
+                class="bg-gray-50 dark:bg-gray-700 border border-gray-300 text-gray-800 dark:text-gray-200 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
                 required 
               />
             </div>
             <div>
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Mensaje</label>
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-800 dark:text-gray-200">Mensaje</label>
               <textarea 
                 id="message" 
                 name="message"
                 rows="4"
-                class="bg-gray-50 border border-gray-300 resize-none text-gray-900 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
+                class="bg-gray-50 dark:bg-gray-700 border border-gray-300 resize-none text-gray-800 dark:text-gray-200 text-sm rounded-lg focus:ring-gold focus:border-gold block w-full p-2.5" 
                 required
               ></textarea>
             </div>
